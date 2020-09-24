@@ -19,8 +19,8 @@ export class AppComponent {
         let fetchedSatellites = data.satellites;
         for (let i = 0; i++; i < fetchedSatellites.length) {
           // tslint:disable-next-line: max-line-length
-          let satellite = new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
-          this.sourceList.push(satellite);
+          new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
+          this.sourceList.push(Satellite);
         }
       }.bind(this));
     }.bind(this));
