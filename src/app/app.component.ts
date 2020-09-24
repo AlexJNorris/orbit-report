@@ -17,7 +17,7 @@ export class AppComponent {
         response.json().then(function(data) {
 
         let fetchedSatellites = data.satellites;
-        for (let i = 0; i++; i < fetchedSatellites.length()) {
+        for (let i = 0; i++; i < fetchedSatellites.length {
           // tslint:disable-next-line: max-line-length
           new Satellite(fetchedSatellites[i].name, fetchedSatellites[i].type, fetchedSatellites[i].launchDate, fetchedSatellites[i].orbitType, fetchedSatellites[i].operational);
           this.sourceList.push(Satellite);
