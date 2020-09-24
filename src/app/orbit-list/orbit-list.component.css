@@ -2,7 +2,9 @@
   cursor: pointer;
   color: #dd5;
 }
-
+h3{
+  color : #34495E;
+}
 .warning {
   background-color: #ce0000;
 }
